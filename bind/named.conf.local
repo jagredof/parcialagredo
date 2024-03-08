@@ -1,0 +1,23 @@
+/*Zona hacia adelante*/
+	zone "servicios.com" {
+	type master;
+	file "/etc/bind/db.servicios.com";
+	};
+
+/*Zona hacia adelante 2*/
+        zone "agredo.com" {
+        type master;
+        file "/etc/bind/db.agredo.com";
+        };
+
+/*Zona hacia adelante 3*/
+        zone "parcial.com" {
+        type master;
+        file "/etc/bind/db.parcial.com";
+        };
+
+/*Zona inversa*/
+	zone "50.168.192.in-addr.arpa" {
+	type master;
+	file "/etc/bind/db.192";
+	};
